@@ -78,3 +78,29 @@ git pull (Städade up det som inte skulle vara med)
 git add
 git commit -m "Final Final commit"
 git push -u origin main
+
+Glömde signa min commit.
+git add fix2.txt
+git commit -S -m "Glömde verify en commit"
+git push -u origin main
+
+gpg. Skipped "Key id": No secret key
+adderade my pgp key till gpg key i github
+Tror att det fungerar nu. Ska prova
+git add fix2.txt
+git commit -S -m "La upp key on github"
+git push -u origin main
+
+gpg: skipped "key-id": No secret key
+VARFÖR FUNGERAR INTE DET HÄR. Jag har skappat en nyckel på kelopatra "pgp" och lagt up den på github.
+git config --global user.signingkey "keyid"
+git add fix2.txt
+git commit -S -m "NU kommer väl en verified commit komma fram"
+git push -u origin main
+
+HELVETE
+gpg --list-secret-keys --keyid-format=long
+Ser id'n som finns på rad "sec". Den långa raden efter "/". Har provat med den förut.
+Den existerar. Men på nått sätt så gör den inte det???
+gpg --status-fd=2 -bsau "keyid"
+[GNUPG] KEY_CONSIDERED 22134124
