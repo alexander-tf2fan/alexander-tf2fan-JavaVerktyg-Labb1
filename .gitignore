@@ -1,0 +1,7 @@
+#Ignore all jar files
+*.jar
+#Ignore all target och all out kataloger
+*target/
+*out/
+#Har med html filer även om dom är i en target katalog
+target/*html
