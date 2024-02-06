@@ -1,3 +1,27 @@
+Skapade ett nytt project i intellij. (Empty project)
+git branch - m master main	(Byte namn på branchen från master till main)
+Skapade en file I intellij som kallas README.md	(New-item README.md)
+Skrev in duck, moose, cat.
+Skapade en git repo genom att skriva [git init] i konsolen.
+Använde mitt dator namn och mitt skol-email
+git add README.md
+git commit -m "Initial commit"
+git branch feature1
+git checkout feature1
+Add dog on row 4 and replace moose with mouse on row 2
+git add README.md
+git commit -m "merge branch feature1"
+git checkout main
+Bytte ut moose med mahmut
+git commit
+git merge feature1
+
+Blev conflict
+Resolve by: Använda conflict lösaren i IntelliJ
+Add dog, replace moose with mahmut, add mouse below mahmut
+Commit med message.
+git tag extinct
+
 git reset --hard HEAD~1
 git branch feature 2
 Gjorde om så alla ord börjar med stor bokstav och commit.
@@ -47,4 +71,10 @@ git checkout main
 git merge feature3
 git add fix2.txt
 git commit -m "Final commit (Hopefully)"
+git push -u origin main
+
+Funkade inte.
+git pull (Städade up det som inte skulle vara med)
+git add
+git commit -m "Final Final commit"
 git push -u origin main
